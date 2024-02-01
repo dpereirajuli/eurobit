@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html ,
+body{
+    width: 100%;
+}
+
+
+
+.header img{
+    width: 30%;
+    padding: 10px;
+}
+
+.header{
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header button{
+    align-self: center;
+}
+
+.primaryInfo{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin:  1% 0;
+    background-color: antiquewhite;
+}
+
+.center{
+    text-align: center;
+}
+
+.info{
+    align-self: center;
+}
+
+.teste{
+    background-color: rgb(245, 217, 192);
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+.teste1{
+    align-self: center;
+    padding: 10px   ;
+}
+
+.nav-button{
+    align-self: center;
+}
+
+ul  {
+    display: flex;
+}
+
+ul li{
+    padding: 10px;
+    list-style: none;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.planos{
+    margin-top: 2%;
+}
+
+.dropdown{
+    display: none;
+}
+
+@media only screen and (max-width: 999px) {
+    .header img{
+        width:50%;
+     }
+
+    .dropdown{
+        display: block;
+        align-self: center;
+    }
+
+    .nav-button{
+        display: none;
+    }
+
+    .primaryInfo{
+        display: block;
+        margin: 10% auto;
+    }
+
+    ul{
+        display: block;
+    }   
+    ul li a, ul li button{
+        width: 90%;
+    } 
+
+    .header .btnlogin{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 560px) {
+    .header img{
+        width:70%;
+     }
+  }

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroBit - Compra e Vendas de BitCoin</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="container header">
+            <img src="/assets/eurobit-logo.png" class="img-fluid" alt="">
+            <div class="nav-button">
+                <ul>
+                    <li><a href="index.html#planos"  class="btn btn-primary">Planos</a></li>
+                    <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contato">Contato</button> </li>
+                    <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sobre">Á EuroBit</button> </li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">|||</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Home</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="button-cel">
+                            <li><a href="#planos"  class="btn btn-primary">Planos</a></li>
+                            <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contato">Contato</button> </li>
+                            <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sobre">Á EuroBit</button> </li>
+                            <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">Login</button> </li>
+                        </ul>
+                        <ul class="button-cel">
+                             <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">Login</button> </li>
+                             <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastre-se</button></li>
+                        </ul>
+                    </div>
+                    </div>
+              </div>
+            <button type="button" class="btn btn-primary btnlogin" data-bs-toggle="modal" data-bs-target="#login">
+                Login
+            </button> 
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container primaryInfo">
+            <div>
+                <img src="https://images.ctfassets.net/c5bd0wqjc7v0/5oEZBTPlhzKLA5OrNpRmsl/5164ee267cc2942f22b8cff329f933fb/hero_3x.png?fl=progressive&amp;q=100&amp;w=1180" class="img-fluid" alt="">
+            </div>
+            <div class="info">
+                <h1>O futuro do dinheiro está aqui</h1>
+                <h3>Temos a confiança de pessoas físicas e empresas para comprar, vender e gerenciar suas criptomoedas.</h3>
+                    <div class="center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Cadastre-se
+                        </button>  
+                    </div>
+                <h4>Cadastre-se e ganhe até US$ 200 em criptomoedas¹
+                </h4>
+            </div>
+        </div>
+
+        <div class="container primaryInfo">
+            <div class="info">
+                <h2>Descubra criptomoedas como bitcoin, ethereum e dogecoin</h2>
+                <h2>Compre, venda e gerencie centenas de criptomoedas de modo simples e seguro.</h2>
+                <div class="center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Ver mais ativos
+                    </button> 
+                </div>
+            </div>
+            <div class="">
+                <img class="img-fluid"  src="https://images.ctfassets.net/c5bd0wqjc7v0/5o0IbUnXunFKmiSC31gK6j/c9da092eda3ebc34941dfa3d107437f4/Type_Circles_4x.png?fl=progressive&amp;q=100&amp;w=1180" alt="Imagem do círculo de criptomoedas na página inicial da Coinbase" aria-label="Imagem do círculo de criptomoedas na página inicial da Coinbase"> 
+            </div>
+        </div> 
+
+        <div class="container primaryInfo">
+            <div class="">
+                <h1>Escolha onde investir</h1>
+                <div class="form-floating" id="dadosTicker">
+                </div>
+            </div>
+            <div class="info">
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <select class="form-select" id="moedaSelect" aria-label="Floating label select example">
+                            <option value="" selected>Moeda</option>
+                            <option value="BTC">BTC</option>
+                            <option value="BCH">BCH</option>
+                            <option value="ETH">ETH</option>
+                            <option value="AAVE">AAVE</option>
+                            <option value="AVAX">AVAX</option>
+                            <option value="BAT">BAT</option>
+                            <option value="DASH">DASH</option>
+                            <option value="DOGE">DOGE</option>
+                            <option value="DOT">DOT</option>
+                            <option value="LTC">LTC</option>
+                            <option value="USDT">USDT</option>
+                            <option value="EUSD">EUSD</option>
+                        </select>
+                        <label for="floatingSelectGrid">Moeda</label>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+        </div>   
+
+        <div class="container primaryInfo">
+            <div class="">
+                <img class="img-fluid" src="https://images.ctfassets.net/c5bd0wqjc7v0/WdlPQ8QhJ267BxSckN56A/956300e8f8cf97ce57eae9c89babc8db/Advanced.png?fl=progressive&amp;q=100&amp;w=1180" alt="" aria-label="" >
+            </div>
+            <div class="info">
+                <h1>ADVANCED</h1>
+                <h2>Ferramentas eficientes feitas para o trader avançado</h2>
+                <p>Ferramentas analíticas eficientes e a segurança da Coinbase oferecem a melhor experiência de negociação. Tenha acesso a gráficos sofisticados, livros de ordens em tempo real e liquidez profunda em centenas de mercados.</p>
+            </div>
+        </div>   
+           
+        <div class="container teste">
+            <div>
+                <h2>Comece em apenas alguns minutos</h2>
+                <h4>Crie uma conta, cadastre sua conta bancária e comece a comprar e vender.</h4>
+            </div>
+            <div class="teste1">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Abrir conta
+                </button>  
+            </div>
+        </div> 
+
+        <div class="container center planos" id="planos">
+            <div>
+                <h2>Planos</h2>
+            </div>
+            <div class="cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Basic</h5>
+                      <p class="card-text">Ganhe um bônus de incentivo, 5% off em sua primeira compra minima de R$100,00 . Direito a 1 mês de mentoria com nosso Colt sobre gestão de cripto moeda + Aplicativo"</p>
+                      <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="/assets/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Intermediary</h5>
+                      <p class="card-text">Ganhe um bônus de incentivo, 9% off em sua primeira compra minima de R$150,00 . Direito a 1 mês de mentoria com nosso Colt sobre gestão de cripto moeda + Ebook "Mente Blindada" + Aplicativo</p>
+                      <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="/assets/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Expert</h5>
+                      <p class="card-text">Ganhe um bônus de incentivo de até 18% off em sua primeira compra minima de R$250,00 . Direito a 5 mêses de mentoria com nosso Colt sobre gestão de cripto moeda + Ebook "Mente Blindada"  + Aplicativo</p>
+                      <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                  </div>
+            </div>
+        </div> 
+    </main>
+
+    <footer class="center planos">
+        <p>© 2024 EuroBit Ltda •Blog •Twitter •Facebook</p>
+    </footer>
+
+
+
+                        <!-- Modal Cadastro-->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Abertura de Conta</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                             </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                          <input type="password" class="form-control" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Confirme a senha</label>
+                                            <input type="password" class="form-control" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Data de nascimento</label>
+                                            <input type="date" class="form-control" required>
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" required>
+                                          <label class="form-check-label" for="exampleCheck1">Termos de uso</label>
+                                        </div>
+                                        <div class="modal-footer"> <div id="liveAlertPlaceholder"></div>
+                                      </form>
+                                </div>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                                    <button type="button" class="btn btn-primary" id="liveAlertBtn">Criar conta</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                                                <!-- Modal  Login -->
+                                                <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <div class="mb-3">
+                                                                  <label for="exampleInputEmail1" class="form-label">Usuário</label>
+                                                                  <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                                                     </div>
+                                                                <div class="mb-3">
+                                                                  <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                                                  <input type="password" class="form-control" required>
+                                                                </div>
+                                                                  <div class="modal-footer"> <div id="liveAlertPlaceholder"></div>
+                                                                  <a href="">Esqueci a senha</a>
+                                                              </form>
+                                                        </div>
+                                                            <button type="button" class="btn btn-primary" id="liveAlertBtn">Login</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                <!-- Modal  Login -->
+                                                <div class="modal fade" id="contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Contatos</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                            <div class="modal-body">
+                                                                <p>Central de Suporte (11) 9999-9999</p>
+                                                                <p>Sac (11) 9999-9999</p>
+                                                                <p>Email: ContatoEurobit@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                                                                                
+                                                <!-- Modal  Login -->
+                                                <div class="modal fade" id="sobre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Quem somos</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                            <div class="modal-body">
+                                                                <p>Estamos construindo a criptoeconomia – um sistema financeiro mais justo, acessível, eficiente e transparente, 
+                                                                    possibilitado pela criptografia.Começamos em 2012 com a ideia radical de que qualquer pessoa, em qualquer lugar, 
+                                                                    deveria ser capaz de enviar e receber Bitcoin de forma fácil e segura. Hoje, oferecemos uma plataforma confiável e
+                                                                    fácil de usar para acessar 
+                                                                    a criptoeconomia mais ampla.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>    
+
+                                                  <script>
+                                                    $(document).ready(function() {
+                                                      $('#moedaSelect').on('change', function() {
+                                                        var valorSelecionado = $(this).val();
+                                                        var url = "https://www.mercadobitcoin.net/api/" + valorSelecionado + "/ticker";
+                                                
+                                                        function obterDadosAPI(url) {
+                                                          $.ajax({
+                                                            method: 'GET',
+                                                            dataType: 'json',
+                                                            url: url,
+                                                            success: function(data) {
+                                                              var tickerData = data.ticker;
+                                                              // Exibindo os dados na div com id "dadosTicker"
+                                                              $('#dadosTicker').html('<p>Último Preço: ' + tickerData.last + '</p>' +
+                                                                                    '<p>Maior Preço nas Últimas 24 Horas: ' + tickerData.high + '</p>' +
+                                                                                    '<p>Menor Preço nas Últimas 24 Horas: ' + tickerData.low + '</p>' +
+                                                                                    '<p>Volume Negociado nas Últimas 24 Horas: ' + tickerData.vol + '</p>' +
+                                                                                    '<p>Volume da Última Oferta: ' + tickerData.vol_exec + '</p>' +
+                                                                                    '<p>Data e Hora da Última Atualização: ' + new Date(tickerData.date * 1000) + '</p>');
+                                                            },
+                                                            error: function(error) {
+                                                              console.error('Erro na requisição:', error);
+                                                            }
+                                                          });
+                                                        }
+                                                
+                                                        obterDadosAPI(url);
+                                                      });
+                                                    });
+                                                  </script>
+
+                                                
+                
+    <script>
+        var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        var alertTrigger = document.getElementById('liveAlertBtn')
+        
+        function alert(message, type) {
+        var wrapper = document.createElement('div')
+        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+        
+        alertPlaceholder.append(wrapper)
+        }
+        
+        if (alertTrigger) {
+        alertTrigger.addEventListener('click', function () {
+            alert('Sua solicitação de abertura foi enviada', 'success')
+        })
+        }
+    </script>  
+
+</body>
+</html>
